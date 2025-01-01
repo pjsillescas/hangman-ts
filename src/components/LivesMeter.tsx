@@ -4,5 +4,11 @@ type Props = {
 };
 
 export default function LivesMeter( { lives, maxLives }: Props) {
-	return (<span className="lives-meter">{lives}/{maxLives}</span>);
+	const percent = lives * 100 / maxLives;
+	const style = (percent > 0) ? {width: `${percent}%`} : { display: "none" };
+	return (<>
+		<div className="lives-meter">
+			<div className="lives-meter-selected" style={style}></div>
+	  	</div> 
+	</>);
 }
