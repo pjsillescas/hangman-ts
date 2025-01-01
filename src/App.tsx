@@ -36,11 +36,18 @@ function App() {
 			lives: MAX_LIVES,
 		};
 		setAppState(state);
-	},[]);
+	}, []);
 
 	const onCategoryClick = useCallback((category: string) => {
-		console.log("category ", category);
-	}, []);
+		const wordService = new WordService();
+		const state = {
+			categories: appState.categories,
+			category: category,
+			word: wordService.getRandomWordFromCategory(category),
+			lives: MAX_LIVES,
+		};
+		setAppState(state);
+	}, [appState]);
 
 	const onLivesChanged = useCallback((lives: number) => {
 		const state = {
@@ -53,8 +60,9 @@ function App() {
 	}, [setAppState, appState]);
 
 	return (<Container fluid="sm">
-		<Header category={appState.category} categories={appState.categories} onCategoryClick={onCategoryClick} lives={appState.lives} maxLives={MAX_LIVES} />
-		<Hangman word={appState.word} onLivesChanged={onLivesChanged} maxLives={MAX_LIVES}/>
+		<Header category={appState.category} categories={appState.categories} onCategoryClick={onCategoryClick} lives={appState.lives}
+			maxLives={MAX_LIVES} />
+		<Hangman word={appState.word} onLivesChanged={onLivesChanged} maxLives={MAX_LIVES} />
 	</Container>);
 }
 

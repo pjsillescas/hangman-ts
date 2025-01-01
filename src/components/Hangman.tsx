@@ -25,7 +25,6 @@ export default function Hangman({ word, onLivesChanged, maxLives }: Props) {
 	useEffect(() => {
 		const state = { word: word, hiddenWord: WILDCARD.repeat(word.length), selectedLetters: [], lives: maxLives, isFinished: false, };
 		setHangmanState(state);
-		console.log("setting state ", state);
 	},[word, maxLives]);
 
 	const onSelectedLetter = (letter: string) => {

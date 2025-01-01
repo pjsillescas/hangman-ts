@@ -16,7 +16,7 @@ function CategoryComponent({ category, onCategoryClick }: CategoryProps) {
 		onCategoryClick(category);
 	},[onCategoryClick]);
 
-	return (<li onClick={onClick}>{category}</li>);
+	return (<li className="category-link" onClick={onClick}>{category}</li>);
 }
 
 export default function Menu({ categories, onCategoryClick }: Props) {
