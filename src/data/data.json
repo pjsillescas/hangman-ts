@@ -1,0 +1,59 @@
+[
+	{
+	"category": "miscelaneous",
+	"words": [
+		"hello",
+		"telephone",
+		"finger",
+		"casino",
+		"screen",
+		"pokemon",
+		"esternocleidomastoideo",
+		"vico",
+		"locomotive",
+		"bohemian",
+		"brush",
+		"stroke"
+		]
+	},
+	{
+		"category": "body",
+		"words": [
+			"mouth",
+			"eyes",
+			"head",
+			"arms",
+			"legs",
+			"lungs",
+			"heart",
+			"liver",
+			"feet",
+			"hands",
+			"armpits",
+			"elbow",
+			"nose"
+		]
+	},
+	{
+		"category": "locomotion",
+		"words": [
+			"car",
+			"plane",
+			"train",
+			"ship",
+			"spaceship",
+			"boat",
+			"rocket"
+		]
+	},
+	{
+		"category": "machines",
+		"words": [
+			"computer",
+			"mobile",
+			"telephone",
+			"mixer",
+			"dishwasher"
+		]
+	}
+]
