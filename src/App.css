@@ -74,3 +74,32 @@
 	flex-direction: row;
 	height: 200px;
 }
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header-data {
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu-list {
+	display: block;
+	margin-top: 20px;
+}
+
+.category {
+	font-size: 40px;
+	margin-top: -12px;
+
+}
+.lives-meter {
+	align-items: flex-end;
+}
